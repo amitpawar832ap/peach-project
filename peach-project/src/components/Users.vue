@@ -2,7 +2,7 @@
   <div class='user ml-3 mr-2'>
       <div class='row'>
           <div class='col-3'>
-              <img src="../assets/amit.jpg">
+              <img src="../assets/demo.jpg">
           </div>
            <div class='col-8'>
             <router-link class="nav-link" to="/user-profile">
@@ -30,8 +30,8 @@ export default {
 }
 </script>
 
-<style>
-.user-label {
+<style scoped>
+/* .user-label {
    font-weight: bold;
    font-size: 14px;
 }
@@ -39,7 +39,6 @@ export default {
 .user{
   height: 70px;
   background: #fff;
-  /* margin-top: 20px; */
   border-radius: 15px;
   margin-bottom: 10px;
 }
@@ -54,5 +53,5 @@ img {
   width: 50px;
   margin-left: 15px;
   margin-top: 5px;
-}
+} */
 </style>

@@ -2,7 +2,7 @@
   <div id="app">
     <div class="row">
       <div v-bind:class="{'col-3': !mobileView}">
-        <ChatSidebar />
+        <ChatSideBar />
       </div>
       <div v-bind:class="{'col-9': !mobileView}" class="user-profile">
         <!-- <UserProfile /> -->
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import ChatSidebar from "./components/ChatSidebar";
+import ChatSideBar from "./components/ChatSideBar";
 
 export default {
   name: "App",
@@ -30,7 +30,7 @@ export default {
     };
   },
   components: {
-    ChatSidebar
+    ChatSideBar
   }
 };
 </script>
@@ -41,7 +41,6 @@ export default {
 
 #app {
   background: #a9a0e2;
-  /*height: 1000px;*/
 }
 .user-profile {
   background: #fff;

@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <diV>
-       <img src="../assets/amit.jpg" class="center">
+       <img src="../assets/demo.jpg" class="center">
        <div class="profile-details">
          <label>Suresh (25)</label>
          <p>TKIET Warana</p>

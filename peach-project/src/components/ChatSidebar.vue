@@ -1,6 +1,6 @@
  <template>
   <div class="chat-sidebar">
-    <div class="">
+    <div class>
       <div class="side-bar">
         <div class="header ml-3 mr-2"></div>
         <autocomplete
@@ -12,19 +12,14 @@
         <div>
           <tabs>
             <tab title="Chats">
-              <Users/>
-              <Users/>
-              <Users/>
+              <Users />
+              <Users />
+              <Users />
             </tab>
-            <tab title="Matches">
-              
-            </tab>
-            <tab title="Events">
-              
-            </tab>
+            <tab title="Matches"></tab>
+            <tab title="Events"></tab>
           </tabs>
         </div>
-
       </div>
     </div>
   </div>
@@ -36,9 +31,8 @@ import Tab from "./Tab.vue";
 import Tabs from "./Tabs.vue";
 import Users from "./Users.vue";
 
-
 export default {
-  name: "ChatSidebar",
+  name: "ChatSideBar",
   methods: {
     search(input) {
       if (input.length < 1) {
@@ -64,18 +58,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-
-html,body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
-.side-bar{
-   min-height: 100vh;
+.side-bar {
+  min-height: 100vh;
 }
 
 .side-bar {
   background: #a9a0e2;
-  /*height: 1000px;*/
 }
 
 .autocomplete {
@@ -92,10 +85,45 @@ html,body {
   margin-bottom: 20px;
 }
 
- * {
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul.tabs_header > li {
+    padding: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
   }
+
+  .active {
+    color:aliceblue;
+  }
+
+  .user-label {
+   font-weight: bold;
+   font-size: 14px;
+  }
+
+.user {
+  height: 70px;
+  background: #fff;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-top: -10px !important;
+  font-size: 14px;
+}
+
+img {
+  border-radius: 50%;
+  width: 70px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
 </style>
-
-
