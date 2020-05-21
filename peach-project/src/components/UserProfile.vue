@@ -1,11 +1,22 @@
 <template>
-  <div class="">
-    <diV>
-       <img src="../assets/demo.jpg" class="center">
-       <div class="profile-details">
-         <label>Suresh (25)</label>
-         <p>TKIET Warana</p>
+  <div class="d-flex align-items-center justify-content-center h-100">
+    <div class="p-3">
+      <img src="../assets/close-u-profile.png" class="">
+    </div>
+    <diV class="user-profile-wrap">
+       <img src="../assets/demo.jpg" class="img-align">
+       <div class="profile-details d-flex justify-content-between align-items-center">
+         <div>
+            <label>Suresh (25)</label>
+            <p>TKIET Warana</p>
+         </div>
+         <div>
+            <img src="../assets/star-icon.png"/>
+         </div>
        </div>
+    </div>
+    <div class="p-3">
+      <img src="../assets/like-u-profile.png" class="">
     </div>
   </div>
 </template>
@@ -16,40 +27,32 @@ export default {
 </script>
 
 <style scoped>
-.center {
+.user-profile-wrap{
+  position: relative;
+}
+.user-profile-wrap > .img-align {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 250px;
   height: 300px;
-}
-
-img {
   border-radius: 10% !important;
 }
-
-p {
-  font-size: x-small;
-  margin-left: 15px;
+.profile-details {
+    background: #fff;
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    border-radius: 0 0px 20px 20px;
+    padding: 10px 17px;
 }
-
-label {
+.profile-details label {
   font-weight: bold;
   font-size: small;
-  margin-left: 15px;
-}
-
-.profile-details{
-    width: 20%;
-    background: #fff;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    margin-top: -60px;
-    width: 22%;
-    position: absolute;
-    margin-left: 390px;
-    border-radius: 10px 10px 20px 20px;
+} 
+.profile-details p {
+  font-size: x-small;
+  margin-bottom: 0;
 }
 </style>

@@ -1,8 +1,8 @@
 <template lang="html">
   <div>
-    <ul class='tabs_header ml-3'>
-      <li v-bind:class="{'active': selectedIndex == index}" v-for='(tab, index) in tabs' :key='tab.title' @click='selectTab(index)'>
-        {{ tab.title }}
+    <ul class='tabs_header d-flex justify-content-center'>
+      <li v-bind:class="{'active': selectedIndex == index}" v-for='(tab, index) in tabs' :key='tab.title' @click='selectTab(index)' class="col text-center">
+        <span>{{ tab.title }}</span>
       </li>
     </ul>
     <slot></slot>
@@ -36,16 +36,31 @@ methods: {
 </script>
 
 <style lang="css" scoped>
- /* ul.tabs_header > li {
-    padding: 20px;
+ ul.tabs_header{
+    padding: 0;
+ }
+ ul.tabs_header > li {
     display: inline-block;
-    margin-right: 5px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 14px;
-  }
-
-  .active {
+    font-size: 18px;
+    padding: 10px;
+}
+.active {
     color:aliceblue;
-  }*/
+}
+ul.tabs_header > li:first-child {
+    display: none;
+}
+ul.tabs_header > li.active span{
+  position: relative;
+}
+ul.tabs_header > li.active span:after {
+    content: "";
+    border-bottom: 2px solid #fff;
+    width: 20px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
 </style>

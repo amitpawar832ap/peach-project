@@ -1,10 +1,10 @@
 <template>
   <div id="app" class="container-fluid h-100">
     <div class="row h-100">
-      <div v-bind:class="{'col-3': !mobileView}">
+      <div v-bind:class="{'col-3': !mobileView}" class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-3">
         <ChatSideBar />
       </div>
-      <div v-bind:class="{'col-9': !mobileView}" class="user-profile">
+      <div v-bind:class="{'col-9': !mobileView}" class="user-profile col-12 col-sm-8 col-md-8 col-lg-8 col-xl-9">
         <!-- <UserProfile /> -->
         <router-view />
       </div>
@@ -40,7 +40,7 @@ export default {
 }
 
 #app {
-  background: #a9a0e2;
+  background: #9C95E2;
 }
 .user-profile {
   background: #fff;

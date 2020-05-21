@@ -1,13 +1,13 @@
 <template lang="html">
   <div class='user'>
-      <div class='row'>
-          <div class='col-3'>
+      <div class='d-flex align-items-center p-2'>
+          <div class="user-thumbnail">
               <img src="../assets/demo.jpg">
           </div>
-           <div class='col-8'>
+          <div class="user-thumbnail-content col">
             <router-link class="nav-link" to="/user-profile">
-            <label class='user-label mt-2'>Suresh</label>
-            <p>Hi how are you?</p>
+              <label class='user-label'>Suresh</label>
+              <p class="mb-0">Hi how are you?</p>
             </router-link>
           </div>
       </div>
@@ -31,27 +31,32 @@ export default {
 </script>
 
 <style scoped>
-/* .user-label {
+.user-label {
    font-weight: bold;
    font-size: 14px;
+   margin-bottom: 0;
 }
 
 .user{
-  height: 70px;
-  background: #fff;
-  border-radius: 15px;
-  margin-bottom: 10px;
+    background: #E0DDF8;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
-
+.user:hover{
+  background: #ffffff;
+}
 p {
-  margin-top: -10px !important;
   font-size: 14px;
 }
 
-img {
-  border-radius: 50%;
+.user-thumbnail img {
+  border-radius: 30%;
   width: 50px;
-  margin-left: 15px;
-  margin-top: 5px;
-} */
+  height: 50px;
+}
+.user-thumbnail-content .nav-link{
+    padding: 0 0 3px 0;
+    color: inherit;
+}
 </style>

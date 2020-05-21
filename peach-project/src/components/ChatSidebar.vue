@@ -2,15 +2,18 @@
   <div class="chat-sidebar">
     <div class>
       <div class="side-bar">
-        <div class="header"></div>
-        
+        <div class="filter-box d-flex align-items-center justify-content-between">
+          <img src="../assets/like-icon.png">
 
+          <img src="../assets/filter-icon.png">
+        </div>
+        
         <div>
           <tabs>
-            <autocomplete class="mb-3"
+            <autocomplete class="mb-2"
           :search="search"
-          placeholder="Search for a user"
-          aria-label="Search for a user"
+          placeholder="Search"
+          aria-label="Search"
         ></autocomplete>
             <tab title="Chats">
               <Users />
@@ -65,65 +68,24 @@ html,
 body {
   height: 100%;
 }
-
-
-.side-bar {
-  background: #a9a0e2;
-}
-
 .autocomplete {
   border-radius: 10px;
 }
-
-.header {
+.autocomplete > .autocomplete-input {
+    border-radius: 11px;
+    padding: 8px 12px 8px 48px;
+    background-color: #E0DDF8;
+}
+.filter-box {
   height: 50px;
   background: #fff;
   margin-top: 20px;
   border-radius: 15px;
   margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 0 20px;
 }
-ul.tabs_header > li:first-child {
-    display: none;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ul.tabs_header > li {
-    padding: 20px;
-    display: inline-block;
-    margin-right: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-  }
-
-  .active {
-    color:aliceblue;
-  }
-
-  .user-label {
-   font-weight: bold;
-   font-size: 14px;
-  }
-
-.user {
-  height: 70px;
-  background: #fff;
-  border-radius: 15px;
-  margin-bottom: 10px;
-}
-
 p {
-  margin-top: -10px !important;
   font-size: 14px;
-}
-
-img {
-  border-radius: 50%;
-  width: 70px;
-  margin-left: 15px;
-  margin-top: 15px;
 }
 </style>
