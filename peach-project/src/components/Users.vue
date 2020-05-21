@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class='user ml-3 mr-2'>
+  <div class='user'>
       <div class='row'>
           <div class='col-3'>
               <img src="../assets/demo.jpg">

@@ -2,15 +2,16 @@
   <div class="chat-sidebar">
     <div class>
       <div class="side-bar">
-        <div class="header ml-3 mr-2"></div>
-        <autocomplete
+        <div class="header"></div>
+        
+
+        <div>
+          <tabs>
+            <autocomplete class="mb-3"
           :search="search"
           placeholder="Search for a user"
           aria-label="Search for a user"
         ></autocomplete>
-
-        <div>
-          <tabs>
             <tab title="Chats">
               <Users />
               <Users />
@@ -18,8 +19,10 @@
             </tab>
             <tab title="Matches"></tab>
             <tab title="Events"></tab>
+            
           </tabs>
         </div>
+        
       </div>
     </div>
   </div>
@@ -63,9 +66,6 @@ body {
   height: 100%;
 }
 
-.side-bar {
-  min-height: 100vh;
-}
 
 .side-bar {
   background: #a9a0e2;
@@ -73,8 +73,6 @@ body {
 
 .autocomplete {
   border-radius: 10px;
-  margin-left: 15px;
-  margin-right: 10px;
 }
 
 .header {
@@ -84,7 +82,9 @@ body {
   border-radius: 15px;
   margin-bottom: 20px;
 }
-
+ul.tabs_header > li:first-child {
+    display: none;
+}
 * {
   margin: 0;
   padding: 0;

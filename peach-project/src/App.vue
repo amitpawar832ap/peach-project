@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <div class="row">
+  <div id="app" class="container-fluid h-100">
+    <div class="row h-100">
       <div v-bind:class="{'col-3': !mobileView}">
         <ChatSideBar />
       </div>
