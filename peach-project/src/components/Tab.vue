@@ -8,13 +8,13 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'Tab'
+      default: "Tab"
     }
   },
-  data () {
+  data() {
     return {
       isActive: true
-    }
+    };
   }
-}
+};
 </script>

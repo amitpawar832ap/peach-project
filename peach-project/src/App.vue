@@ -4,7 +4,10 @@
       <div v-bind:class="{'col-3': !mobileView}" class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-3">
         <ChatSideBar />
       </div>
-      <div v-bind:class="{'col-9': !mobileView}" class="user-profile col-12 col-sm-8 col-md-8 col-lg-8 col-xl-9">
+      <div
+        v-bind:class="{'col-9': !mobileView}"
+        class="user-profile col-12 col-sm-8 col-md-8 col-lg-8 col-xl-9"
+      >
         <!-- <UserProfile /> -->
         <router-view />
       </div>
@@ -20,9 +23,9 @@ export default {
 
   created() {
     if (window.screen.width === 360) {
-        this.mobileView = true;    
-        }
-    },
+      this.mobileView = true;
+    }
+  },
 
   data() {
     return {
@@ -40,7 +43,7 @@ export default {
 }
 
 #app {
-  background: #9C95E2;
+  background: #9c95e2;
 }
 .user-profile {
   background: #fff;

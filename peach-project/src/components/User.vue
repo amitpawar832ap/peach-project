@@ -14,36 +14,35 @@
   </div>
 </template>
 <script>
-
 export default {
   props: {
     title: {
       type: String,
-      default: 'Tab'
+      default: "Tab"
     }
   },
-  data () {
+  data() {
     return {
       isActive: true
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped>
 .user-label {
-   font-weight: bold;
-   font-size: 14px;
-   margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0;
 }
 
-.user{
-    background: #E0DDF8;
-    border-radius: 15px;
-    margin-bottom: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+.user {
+  background: #e0ddf8;
+  border-radius: 15px;
+  margin-bottom: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-.user:hover{
+.user:hover {
   background: #ffffff;
 }
 p {
@@ -55,8 +54,8 @@ p {
   width: 50px;
   height: 50px;
 }
-.user-thumbnail-content .nav-link{
-    padding: 0 0 3px 0;
-    color: inherit;
+.user-thumbnail-content .nav-link {
+  padding: 0 0 3px 0;
+  color: inherit;
 }
 </style>
