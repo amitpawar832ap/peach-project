@@ -18,6 +18,8 @@
               <User />
               <User />
               <User />
+              <User />
+              <User />
             </tab>
             <tab title="Matches"></tab>
             <tab title="Events"></tab>

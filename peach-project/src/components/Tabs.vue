@@ -20,7 +20,7 @@ export default {
     this.tabs = this.$children
   },
   mounted () {
-    this.selectTab(0)
+    this.selectTab(1)
 },
 methods: {
     selectTab (i) {
