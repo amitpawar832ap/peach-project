@@ -1,22 +1,24 @@
 <template>
-  <div class="d-flex align-items-center justify-content-center h-100">
-    <div class="p-3">
-      <img src="../assets/close-u-profile.png" class="">
+  <div class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-center h-100">
+    <div class="p-3 order-1 order-md-0">
+      <img src="../assets/close-u-profile.png" class="img-fluid">
     </div>
-    <diV class="user-profile-wrap">
-       <img src="../assets/demo.jpg" class="img-align">
-       <div class="profile-details d-flex justify-content-between align-items-center">
-         <div>
-            <label>Suresh (25)</label>
-            <p>TKIET Warana</p>
-         </div>
-         <div>
-            <img src="../assets/star-icon.png"/>
-         </div>
-       </div>
+    <div class="col-12 col-md-auto p-3 order-0 order-md-1">
+      <diV class="user-profile-wrap m-auto">
+        <img src="../assets/demo.jpg" class="img-align">
+        <div class="profile-details d-flex justify-content-between align-items-center">
+          <div>
+              <label>Suresh (25)</label>
+              <p>TKIET Warana</p>
+          </div>
+          <div>
+              <img src="../assets/star-icon.png"/>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="p-3">
-      <img src="../assets/like-u-profile.png" class="">
+    <div class="p-3 order-2 order-md-2">
+      <img src="../assets/like-u-profile.png" class="img-fluid">
     </div>
   </div>
 </template>
@@ -29,6 +31,7 @@ export default {
 <style scoped>
 .user-profile-wrap{
   position: relative;
+  width: 250px;
 }
 .user-profile-wrap > .img-align {
   display: block;
