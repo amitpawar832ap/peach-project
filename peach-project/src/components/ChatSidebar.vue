@@ -4,7 +4,6 @@
       <div class="side-bar">
         <div class="filter-box d-flex align-items-center justify-content-between">
           <img src="../assets/like-icon.png">
-
           <img src="../assets/filter-icon.png">
         </div>
         
@@ -16,9 +15,9 @@
           aria-label="Search"
         ></autocomplete>
             <tab title="Chats">
-              <Users />
-              <Users />
-              <Users />
+              <User />
+              <User />
+              <User />
             </tab>
             <tab title="Matches"></tab>
             <tab title="Events"></tab>
@@ -35,7 +34,7 @@
 import Autocomplete from "@trevoreyre/autocomplete-vue";
 import Tab from "./Tab.vue";
 import Tabs from "./Tabs.vue";
-import Users from "./Users.vue";
+import User from "./User.vue";
 
 export default {
   name: "ChatSideBar",
@@ -57,7 +56,7 @@ export default {
     Autocomplete,
     Tab,
     Tabs,
-    Users
+    User
   }
 };
 </script>

@@ -7,7 +7,7 @@
           <div class="user-thumbnail-content col">
             <router-link class="nav-link" to="/user-profile">
               <label class='user-label'>Suresh</label>
-              <p class="mb-0">Hi how are you?</p>
+              <p class="mb-0">Hi, how are you?</p>
             </router-link>
           </div>
       </div>
